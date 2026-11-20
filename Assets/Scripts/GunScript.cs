@@ -13,7 +13,7 @@ public class GunScript : MonoBehaviour
     void Update()
     {
         Vector3 playerPos = new Vector3 (transform.position.x, transform.position.y, transform.position.z);
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             Instantiate(Bullet, transform.position , transform.rotation);
         }

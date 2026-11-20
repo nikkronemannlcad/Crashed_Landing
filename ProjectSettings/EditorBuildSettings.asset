@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level1_HA.unity
     guid: d52f3beb12f3a4f0fb9865f04bdd6c0c
   - enabled: 1
-    path: Assets/Scenes/Level1_TEST.unity
+    path: Assets/Scenes/Greybox Levels/Level1_HUB.unity
     guid: 0b3af18740461fd41be3a8c3d3479ac0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

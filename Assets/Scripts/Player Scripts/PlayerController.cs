@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float speed = 5;
     [SerializeField] private float jumpHeight = 1.5f;
     [SerializeField] float gravity = -10f;
-    [SerializeField] private float mouseSense = 100f;
+    [SerializeField] private float mouseSense = 200f;
     private float jumpVelocity;
     private Vector3 movement;
     private bool jumpPressed;
