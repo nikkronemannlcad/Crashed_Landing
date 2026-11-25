@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
     {
        Time.timeScale = 1;
        SceneManager.LoadScene(sceneNames[1]); 
+       Debug.Log("hub loaded");
     }
 
     public void LoadLevel1()
@@ -49,12 +50,9 @@ public class GameManager : MonoBehaviour
        SceneManager.LoadScene(sceneNames[2]);  
        
     }
-
-    public void LoadLevel2()
+    public void QuitGame()
     {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(sceneNames[3]); 
+        Application.Quit();
     }
-
 
 }
