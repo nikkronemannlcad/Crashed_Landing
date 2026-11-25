@@ -14,11 +14,11 @@ public class ShipDeposit : MonoBehaviour
     public bool allPiecesCollected;
     [SerializeField] private GameObject depositMessage;
 
-    public ItemPickup ip;
+    public GameManager gm;
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player") && ip.shipPartsCollected >= 1)
+        if (other.gameObject.CompareTag("Player") && gm.shipPartsCollected >= 1)
         {
             Debug.Log("canDeposit");
             inShipZone = true;
@@ -37,7 +37,7 @@ public class ShipDeposit : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && ip.shipPartsCollected >= 1 && inShipZone)
+        if (Input.GetKeyDown(KeyCode.E) && gm.shipPartsCollected >= 1 && inShipZone)
         {
             Debug.Log("dropped the item");
 

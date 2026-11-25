@@ -7,11 +7,11 @@ public class UIManager : MonoBehaviour
     /// For now, the UI manager is for displaying if a ship part has been collected and checks against the item pickup script to display the correct UI image
     /// </summary>
      
-    public ItemPickup ip;
+    public GameManager gm;
     [SerializeField] private GameObject sp1Inventory;
     void Update()
     {
-        if (ip.shipPartsCollected == 1)
+        if (gm.shipPartsCollected == 1)
         {
             sp1Inventory.SetActive(true);
         }

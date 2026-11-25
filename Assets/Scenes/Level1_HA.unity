@@ -2320,7 +2320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff0d0bdf61784a088c09880793acfb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
-  ip: {fileID: 1253969007}
+  gm: {fileID: 8421786553613738298, guid: 6a767d8dfcba6427f81eb979e0b0da98, type: 3}
   sp1Inventory: {fileID: 1340536564}
 --- !u!1 &876854565
 GameObject:
@@ -6029,6 +6029,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ship Part
       objectReference: {fileID: 0}
+    - target: {fileID: 8626372643552455971, guid: 85ed1c40b83aa4e9699fa6f198ad5738, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 8421786553613738298, guid: 6a767d8dfcba6427f81eb979e0b0da98, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6090,6 +6094,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 8709558210881873000, guid: 0ddb4604e1d4c4d9fa4a9452601cba6c, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 8421786553613738298, guid: 6a767d8dfcba6427f81eb979e0b0da98, type: 3}
     - target: {fileID: 8709558210881873000, guid: 0ddb4604e1d4c4d9fa4a9452601cba6c, type: 3}
       propertyPath: ip
       value: 
