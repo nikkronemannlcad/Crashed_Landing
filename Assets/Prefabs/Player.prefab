@@ -46,7 +46,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeathController
   phs: {fileID: -215647196306026760}
-  thisScene: Level1_HA
   loseScreen: {fileID: 8769160088815542965}
 --- !u!1 &669797587643095374
 GameObject:
@@ -998,6 +997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   characterController: {fileID: 7131649615400795457}
   speed: 10
+  sideMoveSpeed: 5.5
   jumpHeight: 5
   gravity: -20
   mouseSense: 150

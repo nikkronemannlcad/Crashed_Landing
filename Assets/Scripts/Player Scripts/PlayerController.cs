@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] public CharacterController characterController;
     [SerializeField] private float speed = 5;
+    [SerializeField] private float backMoveSpeed = 3f;
+    [SerializeField] private float sideMoveSpeed = 3f;
     [SerializeField] private float jumpHeight = 1.5f;
     [SerializeField] float gravity = -10f;
     [SerializeField] private float mouseSense = 200f;
@@ -42,7 +44,10 @@ public class PlayerController : MonoBehaviour
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
 
-        Vector3 move = new Vector3(movement.x, 0, movement.y).normalized;
+        Vector3 input = new Vector3(movement.x, 0, movement.y).normalized;
+
+        float currentDirectionalSpeed = input.z < 0 ? backMoveSpeed : speed;
+        Vector3 move = new Vector3(input.x * sideMoveSpeed, 0, input.z * currentDirectionalSpeed);
         move = transform.TransformDirection(move);
         
         if (jumpPressed && characterController.isGrounded) {
@@ -52,8 +57,9 @@ public class PlayerController : MonoBehaviour
 
         jumpVelocity += gravity * Time.deltaTime;
 
-        Vector3 velocity = move * speed;
+        Vector3 velocity = move;
         velocity.y = jumpVelocity;
+
         characterController.Move(velocity * Time.deltaTime);
     }
 
