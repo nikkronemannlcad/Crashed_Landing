@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public List <string> sceneNames;
     
     //public ship parts collected manager
-    public int shipPartsCollected;
+    public int shipPartsCollected = 0;
 
 
     public static GameManager instance;

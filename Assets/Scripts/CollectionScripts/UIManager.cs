@@ -20,6 +20,7 @@ public class UIManager : MonoBehaviour
         if (gm.shipPartsCollected == 2)
         {
             sp2Inventory.SetActive(true);
+            sp1Inventory.SetActive(true);
         }
 
         //this if statement will be duped per item collected 

@@ -8,6 +8,8 @@ TagManager:
   - Wall
   - SpawnPoint
   - shipCollect
+  - FirstPartUI
+  - SecondPartUI
   layers:
   - Default
   - TransparentFX

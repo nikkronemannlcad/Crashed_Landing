@@ -2322,6 +2322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
   gm: {fileID: 0}
   sp1Inventory: {fileID: 1340536564}
+  sp2Inventory: {fileID: 0}
 --- !u!1 &876854565
 GameObject:
   m_ObjectHideFlags: 0
