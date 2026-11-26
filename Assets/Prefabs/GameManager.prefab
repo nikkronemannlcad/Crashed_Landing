@@ -44,5 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1b8a82d4c624a3ba7ce7f1c4d21a61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  sceneNames: []
-  shipPartsCollected: 1
+  sceneNames:
+  - Title Screen
+  - HubWorld
+  - Level1_HA
+  shipPartsCollected: 0

@@ -31,7 +31,7 @@ public class EndGameController : MonoBehaviour
         //to quit the game whenever
         if (Input.GetKeyDown(KeyCode.Escape) || (Input.GetKeyDown(KeyCode.Tab)))
         {
-            Application.Quit();
+            Quit();
         }
     }
 
