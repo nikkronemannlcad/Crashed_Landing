@@ -2320,7 +2320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff0d0bdf61784a088c09880793acfb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
-  ip: {fileID: 1253969007}
+  gm: {fileID: 0}
   sp1Inventory: {fileID: 1340536564}
 --- !u!1 &876854565
 GameObject:
