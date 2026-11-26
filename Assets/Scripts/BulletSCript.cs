@@ -5,6 +5,7 @@ public class BulletSCript : MonoBehaviour
 {
     [SerializeField] private Rigidbody rb;
     [SerializeField] private GameObject enemy;
+    public AudioClip enemyDeath;
 
  
     void Awake()
@@ -17,6 +18,10 @@ public class BulletSCript : MonoBehaviour
         rb.AddForce(transform.forward * 20f, ForceMode.Impulse);
     }
 
+    private void Update()
+    {
+    }
+
     void OnTriggerEnter (Collider other)
     {
         if (other.CompareTag("Wall"))
@@ -26,8 +31,12 @@ public class BulletSCript : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             enemy = other.gameObject;
+
+            AudioSource.PlayClipAtPoint(enemyDeath, enemy.transform.position);
+
             Destroy(enemy);
             Destroy(gameObject);
+
         }
     }
 }
