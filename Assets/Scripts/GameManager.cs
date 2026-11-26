@@ -21,10 +21,12 @@ public class GameManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+            Time.timeScale = 1f;
         }
         else if (instance != this)
         {
-            Destroy(this);
+            Destroy(gameObject);
+            return;
         }
         DontDestroyOnLoad(this);
     }
