@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1_TEST.unity
     guid: 0b3af18740461fd41be3a8c3d3479ac0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Greybox Levels/HubWorld.unity
     guid: cd3de9e89a00d4d4aa8a40775015c7ea
   m_configObjects:
