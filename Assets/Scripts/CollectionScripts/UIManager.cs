@@ -9,11 +9,17 @@ public class UIManager : MonoBehaviour
      
     public GameManager gm;
     [SerializeField] private GameObject sp1Inventory;
+    [SerializeField] private GameObject sp2Inventory;
     void Update()
     {
         if (gm.shipPartsCollected == 1)
         {
             sp1Inventory.SetActive(true);
+        }
+
+        if (gm.shipPartsCollected == 2)
+        {
+            sp2Inventory.SetActive(true);
         }
 
         //this if statement will be duped per item collected 
