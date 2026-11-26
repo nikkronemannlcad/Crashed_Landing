@@ -7,8 +7,19 @@ public class DeathController : MonoBehaviour
     /// This script will be on the player and control when they die!
     /// </summary>
     public PlayerHealthScript phs;
-    [SerializeField] private string thisScene;
+    private Scene thisScene;
+    private string thisSceneName;
     [SerializeField] private GameObject loseScreen;
+    private GameObject player;
+    private GameObject playerCamera;
+
+    private void Start()
+    {
+        thisScene = SceneManager.GetActiveScene();
+        thisSceneName = thisScene.name;
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerCamera = GameObject.FindGameObjectWithTag("MainCamera");
+    }
 
     void Update()
     {
@@ -25,12 +36,14 @@ public class DeathController : MonoBehaviour
 
     public void Retry()
     {
-        SceneManager.LoadScene(thisScene);
-        Debug.Log("buttonpressed");
+        SceneManager.LoadScene(thisSceneName);
+        Time.timeScale = 1.0f;
+        Destroy(player);
+        Debug.Log("Retry Button Pressed");
     }
     public void Quit()
     {
         Application.Quit();
-        Debug.Log("buttonpressed");
+        Debug.Log("Quit Button Pressed");
     }
 }

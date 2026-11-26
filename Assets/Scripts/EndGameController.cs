@@ -11,6 +11,12 @@ public class EndGameController : MonoBehaviour
     [SerializeField] private string nextScene;
     [SerializeField] private GameObject winScreen;
 
+    private void Start()
+    {
+        Time.timeScale = 1.0f;
+        nextScene = "End Screen";
+    }
+
     void Update()
     {
         if (sd.allPiecesCollected) //when you win
@@ -31,7 +37,8 @@ public class EndGameController : MonoBehaviour
 
     public void NextLevel()
     {
-        SceneManager.LoadScene(nextScene);
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene("End Screen");
         Debug.Log("Load next scene button pressed");
     }
 
