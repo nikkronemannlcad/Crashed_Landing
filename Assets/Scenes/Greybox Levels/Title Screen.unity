@@ -864,7 +864,7 @@ GameObject:
   - component: {fileID: 1771669102}
   - component: {fileID: 1771669101}
   m_Layer: 5
-  m_Name: Start Game
+  m_Name: QuitGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -946,8 +946,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1771669101}
-        m_TargetAssemblyTypeName: LoadHub, Assembly-CSharp
+      - m_Target: {fileID: 8421786553613738298, guid: 6a767d8dfcba6427f81eb979e0b0da98, type: 3}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -1137,7 +1137,7 @@ GameObject:
   - component: {fileID: 2105473065}
   - component: {fileID: 2105473064}
   m_Layer: 5
-  m_Name: Quit Game
+  m_Name: StartGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1219,9 +1219,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2105473064}
-        m_TargetAssemblyTypeName: LoadHub, Assembly-CSharp
-        m_MethodName: LoadFirstLevel
+      - m_Target: {fileID: 8421786553613738298, guid: 6a767d8dfcba6427f81eb979e0b0da98, type: 3}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadHubWorld
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     {
        Time.timeScale = 1;
        SceneManager.LoadScene(sceneNames[0]); 
+       shipPartsCollected = 0;
     }
 
     public void LoadHubWorld()
@@ -48,6 +49,13 @@ public class GameManager : MonoBehaviour
     {
        Time.timeScale = 1;
        SceneManager.LoadScene(sceneNames[2]);  
+       
+    }
+
+    public void LoadEndScreen()
+    {
+       Time.timeScale = 1;
+       SceneManager.LoadScene(sceneNames[3]);  
        
     }
     public void QuitGame()

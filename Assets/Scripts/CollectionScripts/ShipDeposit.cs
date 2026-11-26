@@ -14,6 +14,8 @@ public class ShipDeposit : MonoBehaviour
     public bool allPiecesCollected;
     [SerializeField] private GameObject depositMessage;
 
+    public PopupActivator pa;
+
     public GameManager gm;
 
     void OnTriggerEnter(Collider other)
@@ -45,6 +47,7 @@ public class ShipDeposit : MonoBehaviour
             //for now bc we only need one ship part for the demo at minimum I am placing the win bool here
             //we are probably going to change what the win bool is but no matter what its going to trigger the win screen
             allPiecesCollected = true;
+            pa.isOpen = true;
         }
     }
 }

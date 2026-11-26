@@ -1219,9 +1219,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2105473064}
-        m_TargetAssemblyTypeName: LoadHub, Assembly-CSharp
-        m_MethodName: LoadFirstLevel
+      - m_Target: {fileID: 8421786553613738298, guid: 6a767d8dfcba6427f81eb979e0b0da98, type: 3}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

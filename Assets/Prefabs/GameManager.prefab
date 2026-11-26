@@ -48,4 +48,5 @@ MonoBehaviour:
   - Title Screen
   - HubWorld
   - Level1_HA
+  - End Screen
   shipPartsCollected: 0
